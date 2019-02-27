@@ -6,7 +6,7 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-  config.vm.box = "ffuenf/debian-7.5.0-amd64"
+  config.vm.box = "ffuenf/debian-9.5.0-amd64"
 
   # Upgrade the memory
   config.vm.provider("virtualbox"){|vb| vb.memory = 1024}

@@ -2,11 +2,11 @@ source "$(dirname $BASH_SOURCE)/system.sh"
 source "$(dirname $BASH_SOURCE)/utils.sh"
 source "$(dirname $BASH_SOURCE)/deb.sh"
 
-readonly MAME_DEB_URL="file://$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/../deb/mame_0.153_amd64.deb"
+readonly MAME_DEB_URL="file://$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/../deb/mame_0.165_amd64.deb"
 readonly MAME_FILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/../files/mame"
 
-readonly MAME_SRC_URL="http://mame.mirrors.zippykid.com/releases/mame0153s.zip"
-readonly MAME_VERSION="0.153"
+readonly MAME_SRC_URL="https://github.com/mamedev/mame/releases/download/mame0165/mame0165s.zip"
+readonly MAME_VERSION="0.165"
 readonly MAME_SRC_PATH="/usr/local/src/mame_${MAME_VERSION}"
 readonly MAME_BUILD_PATH="/tmp/mame_build"
 readonly MAME_BUILD_DEPENDENCIES="build-essential libsdl1.2-dev libsdl-ttf2.0-dev \

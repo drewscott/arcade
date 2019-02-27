@@ -1,5 +1,5 @@
 This repo contains a collection of bash scripts and libraries used to bootstrap
-an arcade system from a fresh Debian 7 (x64).
+an arcade system from a fresh Debian 9 (x64).
 
 What do the script do:
 * Update the system (`apt-get update`)
@@ -24,7 +24,7 @@ What do the script do:
 ## Clone the repository
 
 ```
-git clone https://github.com/garnieretienne/arcade.git
+git clone https://github.com/drewscott/arcade.git
 cd arcade
 ```
 

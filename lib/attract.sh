@@ -3,10 +3,10 @@ source "$(dirname $BASH_SOURCE)/utils.sh"
 source "$(dirname $BASH_SOURCE)/deb.sh"
 source "$(dirname $BASH_SOURCE)/sfml2.sh"
 
-readonly ATTRACT_DEB_URL="file://$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/../deb/attract-mode_1.3.1_amd64.deb"
+readonly ATTRACT_DEB_URL="file://$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/../deb/attract-mode_2.5.1_amd64.deb"
 
-readonly ATTRACT_SRC_URL="https://github.com/mickelson/attract/archive/v1.3.1.tar.gz"
-readonly ATTRACT_VERSION="1.3.1"
+readonly ATTRACT_SRC_URL="https://github.com/mickelson/attract/archive/v2.5.1.tar.gz"
+readonly ATTRACT_VERSION="2.5.1"
 readonly ATTRACT_SRC_PATH="/usr/local/src/attract_${ATTRACT_VERSION}"
 readonly ATTRACT_BUILD_PATH="/tmp/attract_build"
 readonly ATTRACT_BUILD_DEPENDENCIES="build-essential pkg-config libopenal-dev \
