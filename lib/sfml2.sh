@@ -9,9 +9,9 @@ readonly SFML_SRC_URL="https://www.sfml-dev.org/files/SFML-2.5.1-sources.zip"
 readonly SFML_VERSION="2.5.1"
 readonly SFML_SRC_PATH="/usr/local/src/sfml_${SFML_VERSION}"
 readonly SFML_BUILD_PATH="/tmp/sfml_build"
-readonly SFML_BUILD_DEPENDENCIES="libpthread-stubs0-dev libgl1-mesa-dev \
-    libx11-dev libxrandr-dev libfreetype6-dev libglew1.5-dev libjpeg8-dev \
-    libsndfile1-dev libopenal-dev cmake ttf-freefont build-essential"
+readonly SFML_BUILD_DEPENDENCIES="git curl unzip libpthread-stubs0-dev libgl1-mesa-dev \
+    libx11-dev libxrandr-dev libfreetype6-dev libglew1.5-dev libjpeg62-turbo-dev \
+    libsndfile1-dev libopenal-dev cmake libudev-dev ttf-freefont build-essential"
 
 sfml_install_build_dependencies() {
   install_packages $SFML_BUILD_DEPENDENCIES

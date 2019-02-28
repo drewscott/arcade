@@ -9,11 +9,11 @@ readonly ATTRACT_SRC_URL="https://github.com/mickelson/attract/archive/v2.5.1.ta
 readonly ATTRACT_VERSION="2.5.1"
 readonly ATTRACT_SRC_PATH="/usr/local/src/attract_${ATTRACT_VERSION}"
 readonly ATTRACT_BUILD_PATH="/tmp/attract_build"
-readonly ATTRACT_BUILD_DEPENDENCIES="build-essential pkg-config libopenal-dev \
+readonly ATTRACT_BUILD_DEPENDENCIES="git curl unzip build-essential pkg-config libopenal-dev \
     libavformat-dev libavcodec-dev libavutil-dev libswscale-dev fontconfig \
-    libglew-dev libgl1-mesa-dev libxrandr-dev libjpeg8-dev libsfml-dev"
+    libglew-dev libgl1-mesa-dev libxrandr-dev libjpeg62-turbo-dev libsfml-dev"
 readonly ATTRACT_DEB_DEPENDENCIES="libsfml libavformat53 libswscale2 libopenal1 \
-    libglew1.7 libjpeg8 libxrandr2 ttf-freefont"
+    libglew1.7 libjpeg62-turbo libxrandr2 ttf-freefont"
 
 attract_install_build_dependencies() {
   install_package_from_url $SFML_DEB_URL libsfml
