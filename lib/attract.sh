@@ -12,8 +12,8 @@ readonly ATTRACT_BUILD_PATH="/tmp/attract_build"
 readonly ATTRACT_BUILD_DEPENDENCIES="git curl unzip build-essential pkg-config libopenal-dev \
     libavformat-dev libavcodec-dev libavutil-dev libswscale-dev fontconfig \
     libglew-dev libgl1-mesa-dev libxrandr-dev libjpeg62-turbo-dev libsfml-dev"
-readonly ATTRACT_DEB_DEPENDENCIES="libsfml libavformat53 libswscale2 libopenal1 \
-    libglew1.7 libjpeg62-turbo libxrandr2 ttf-freefont"
+readonly ATTRACT_DEB_DEPENDENCIES="libsfml libavformat57 libswscale4 libopenal1 \
+    libglew2.0 libjpeg62-turbo libxrandr2 ttf-freefont"
 
 attract_install_build_dependencies() {
   install_package_from_url $SFML_DEB_URL libsfml

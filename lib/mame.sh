@@ -9,10 +9,10 @@ readonly MAME_SRC_URL="https://github.com/mamedev/mame/releases/download/mame016
 readonly MAME_VERSION="0.165"
 readonly MAME_SRC_PATH="/usr/local/src/mame_${MAME_VERSION}"
 readonly MAME_BUILD_PATH="/tmp/mame_build"
-readonly MAME_BUILD_DEPENDENCIES="git curl unzip build-essential libsdl1.2-dev libsdl-ttf2.0-dev \
-    libqt4-dev libfontconfig1-dev libxinerama-dev"
+readonly MAME_BUILD_DEPENDENCIES="git curl unzip build-essential libsdl1.2-dev libsdl2-ttf-dev \
+    libqt4-dev libfontconfig1-dev libxinerama-dev libsdl2-dev libsdl2-ttf-dev libfontconfig-dev qt5-default"
 readonly MAME_DEB_DEPENDENCIES="libasound2 libqtgui4 libsdl1.2debian \
-    libsdl-ttf2.0-0 libxinerama1"
+    libsdl-ttf2.0-0 libsdl2-ttf-2.0-0 libsdl2-2.0-0 libxinerama1"
 
 mame_install_build_dependencies() {
   install_packages $MAME_BUILD_DEPENDENCIES
